@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Lily+Script+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav><h1>Books</h1></nav>
+    <main>
+      <!-- <div class="book">
+        <div class="left">
+          <p>Title: Zagloool</p>
+          <p>Author: Zag</p>
+          <p>Pages: 69</p>
+          <div class="read">
+            <p>Read</p>
+            <input type="checkbox"/>
+          </div>
+        </div>
+        <button class="removeBook">
+          <span class="material-symbols-rounded"> close </span>
+        </button>
+      </div> -->
+    </main>
+    <button id="showDialog">
+      <span class="material-symbols-outlined"> add </span>
+    </button>
+    <dialog id="addBook" hidden>
+      <form method="">
+        <h1>Add Book</h1>
+        <input
+          type="text"
+          id="title"
+          class="input"
+          placeholder="Title..."
+          required
+        />
+        <input
+          type="text"
+          id="author"
+          class="input"
+          placeholder="Author..."
+          required
+        />
+        <input
+          type="number"
+          id="pages"
+          class="input"
+          placeholder="Pages"
+          required
+        />
+        <label id="readLabel" for="read"
+          >Read? <input type="checkbox" name="read" id="read"
+        /></label>
+        <button id="createBook">Create</button>
+        <button id="closeDialog">
+          <span class="material-symbols-rounded"> close </span>
+        </button>
+      </form>
+    </dialog>
+  </body>
+
+  <script src="app.js"></script>
+</html>
