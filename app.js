@@ -22,6 +22,7 @@ function createCards() {
   main.textContent = "";
   for (let i = 0; i < myLibrary.length; i++) {
     const book = myLibrary[i];
+    book.index = i;
 
     const bookCard = document.createElement("div");
     const bookCardLeft = document.createElement("div");
